@@ -64,6 +64,32 @@ describe('QuestionAndAnswers.vue', () => {
         expect(response).toEqual(expect.arrayContaining([2]));
       })
     })
+    describe('for multiplication (*) operator' , () => {
+      beforeEach(async () => {
+        wrapper.vm.operatorValue = 'multiplication'
+        jest.spyOn(wrapper.vm, 'generateRandomNumber').mockReturnValue(7)
+        await wrapper.vm.$forceUpdate()
+      })
+      it('should set correctAnswer',  () => {
+        wrapper.vm.correctAnswer = 10
+        wrapper.vm.createAnswers()
+
+        expect(wrapper.vm.correctAnswer).toEqual(25)
+      })
+      it('should set operatorChar to *', () => {
+        wrapper.vm.operatorChar = ''
+        wrapper.vm.createAnswers()
+
+        expect(wrapper.vm.operatorChar).toEqual('*')
+      })
+      it('should return a list of three answers, which includes correct and incorrect answer', () => {
+        let response = wrapper.vm.createAnswers()
+        expect(response.length).toEqual(3)
+        expect(response).toEqual(expect.arrayContaining([25]));
+        expect(response).toEqual(expect.arrayContaining([35]));
+        expect(response).toEqual(expect.arrayContaining([35]));
+      })
+    })
   })
   describe('selectAnswer method', () => {
     let event
