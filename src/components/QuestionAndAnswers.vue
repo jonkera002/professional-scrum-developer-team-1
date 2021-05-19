@@ -6,6 +6,7 @@
       <button class="answer-button" @click="selectAnswer($event, answersList[0])">{{answersList[0]}}</button>
       <button class="answer-button" @click="selectAnswer($event, answersList[1])">{{answersList[1]}}</button>
       <button class="answer-button" @click="selectAnswer($event, answersList[2])">{{answersList[2]}}</button>
+      <button class="answer-button" @click="selectAnswer($event, answersList[3])">{{answersList[3]}}</button>
     </div>
 
     <button class="big-button next-button" v-if="answerSelected" @click="$emit('nextQuestion')">Next</button>
@@ -45,6 +46,7 @@ export default {
           answers.push(this.correctAnswer)
           answers.push(randomOtherLeftNumber + this.rightNumber)
           answers.push(this.leftNumber + randomOtherRightNumber)
+          answers.push(randomOtherLeftNumber + randomOtherRightNumber)
           break
         case 'subtraction':
           this.correctAnswer = this.leftNumber - this.rightNumber
@@ -52,6 +54,7 @@ export default {
           answers.push(this.leftNumber - this.rightNumber)
           answers.push(randomOtherRightNumber - this.rightNumber)
           answers.push(this.leftNumber - randomOtherLeftNumber)
+          answers.push(randomOtherLeftNumber - randomOtherRightNumber)
           break
         case 'multiplication':
           this.correctAnswer = this.leftNumber * this.rightNumber
@@ -59,6 +62,7 @@ export default {
           answers.push(this.leftNumber * this.rightNumber)
           answers.push(randomOtherRightNumber * this.rightNumber)
           answers.push(this.leftNumber * randomOtherLeftNumber)
+          answers.push(randomOtherLeftNumber * randomOtherRightNumber)
           break
       }
       answers.sort(() => Math.random() - 0.5)
