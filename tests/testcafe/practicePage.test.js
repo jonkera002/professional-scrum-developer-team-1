@@ -36,7 +36,7 @@ test('should move to the next question when clicking on next', async t => {
     .expect(Selector('.question').visible).ok()
     .click(Selector('#practice').find('.answer-button').nth(0))
     .click(Selector('.next-button'))
-    .expect(Selector('.title-on-page').innerText).eql('Pratice Question #2')
+    .expect(Selector('.title-on-page').innerText).eql('Practice Question #2')
     .expect(Selector('.question').visible).ok()
     .expect(Selector('#practice').find('.answer-button').count).eql(3)
 });
