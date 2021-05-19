@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1621412713504" clover="3.2.0">
-  <project timestamp="1621412713506" name="All files">
-    <metrics statements="49" coveredstatements="49" conditionals="9" coveredconditionals="9" methods="12" coveredmethods="12" elements="70" coveredelements="70" complexity="0" loc="49" ncloc="49" packages="2" files="4" classes="4"/>
+<coverage generated="1621415318586" clover="3.2.0">
+  <project timestamp="1621415318590" name="All files">
+    <metrics statements="50" coveredstatements="50" conditionals="11" coveredconditionals="11" methods="12" coveredmethods="12" elements="73" coveredelements="73" complexity="0" loc="50" ncloc="50" packages="2" files="4" classes="4"/>
     <package name="components">
-      <metrics statements="36" coveredstatements="36" conditionals="7" coveredconditionals="7" methods="6" coveredmethods="6"/>
+      <metrics statements="37" coveredstatements="37" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="6"/>
       <file name="QuestionAndAnswers.vue" path="C:\Users\mchriste\Documents\PSD\professional-scrum-developer-team-1\src\components\QuestionAndAnswers.vue">
-        <metrics statements="36" coveredstatements="36" conditionals="7" coveredconditionals="7" methods="6" coveredmethods="6"/>
-        <line num="23" count="15" type="stmt"/>
-        <line num="34" count="15" type="stmt"/>
-        <line num="38" count="24" type="stmt"/>
-        <line num="39" count="24" type="stmt"/>
-        <line num="40" count="24" type="stmt"/>
-        <line num="42" count="24" type="stmt"/>
+        <metrics statements="37" coveredstatements="37" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="6"/>
+        <line num="23" count="16" type="stmt"/>
+        <line num="34" count="16" type="stmt"/>
+        <line num="38" count="25" type="stmt"/>
+        <line num="39" count="25" type="stmt"/>
+        <line num="40" count="25" type="stmt"/>
+        <line num="42" count="25" type="stmt"/>
         <line num="44" count="3" type="stmt"/>
         <line num="45" count="3" type="stmt"/>
         <line num="46" count="3" type="stmt"/>
@@ -33,15 +33,16 @@
         <line num="64" count="3" type="stmt"/>
         <line num="65" count="3" type="stmt"/>
         <line num="66" count="3" type="stmt"/>
-        <line num="68" count="51" type="stmt"/>
-        <line num="69" count="24" type="stmt"/>
-        <line num="72" count="3" type="stmt"/>
-        <line num="73" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="74" count="1" type="stmt"/>
+        <line num="68" count="52" type="stmt"/>
+        <line num="69" count="25" type="stmt"/>
+        <line num="72" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="74" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="75" count="1" type="stmt"/>
-        <line num="77" count="2" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
         <line num="78" count="2" type="stmt"/>
-        <line num="82" count="63" type="cond" truecount="2" falsecount="0"/>
+        <line num="79" count="2" type="stmt"/>
+        <line num="84" count="67" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="views">
